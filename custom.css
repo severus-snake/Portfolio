@@ -10,7 +10,9 @@ body {
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-
+.list-unstyled i {
+    font-size: 1.5em;
+}
 
 
 
@@ -40,7 +42,6 @@ body {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    margin-bottom: 5vh;
 }
 
 .text-vertical-center {
@@ -113,12 +114,26 @@ body {
 #About {
     height: 100vh;
     padding: 50px 0;
-    margin-bottom: 5vh;
+    background-color: #222222;
+    color: white;
+}
+
+#Portfolio {
+    height: 100vh;
+    padding: 50px 0;
+    background-color: #000000;
+    color: white;
+}
+
+#Portfolio div.thumbnail {
+    margin-top: 5vh;
 }
 
 #Resume {
     height: 100vh;
     padding: 50px 0;
+    background-color: #222222;
+    color: white;
 }
 
 #Resume iframe{
@@ -126,18 +141,16 @@ body {
     width: 100%;
 }
 
-#Portfolio {
-    height: 100vh;
-    padding: 50px 0;
-}
-
-#Portfolio div.thumbnail {
-    margin-top: 5vh;
-}
-
 #Contact {
-    height: 75vh;
+    height: 77vh;
     padding: 50px 0;
+    background-color: #000000;
+    color: white;
+}
+
+#Footer {
+    background-color: #000000;
+    color: white;
 }
 
 
