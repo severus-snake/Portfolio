@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfolio">
+    <meta name="author" content="Eric Andrade">
+
+    <title>Eric Andrade - Portfolio</title>
+
+    <!-- Bootstrap CSS code -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- My CSS Code -->
+    <link href="custom.css" rel="stylesheet">
+
+    <!-- FontAwesome CDN Code -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <!-- Firepad CSS -->
+    <link rel="stylesheet" href="https://cdn.firebase.com/libs/firepad/1.4.0/firepad.css" />
+
+
+</head>
+<body>
+
+<!-- Navbar -->
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#Top" class="navbar-brand navbar-left"><i class="fa fa-home" aria-hidden="true"></i></a>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav navbar-right text-right">
+                <li><a href="#About">About</a></li>
+                <li><a href="#Portfolio">Portfolio</a></li>
+                <li><a href="#Resume">Resume</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Header -->
+<header id="Top" class="header">
+    <div class="text-vertical-center">
+            <h1><strong>Hi I'm Eric Andrade</strong></h1>
+            <h3>and YES, you've come to the right place!</h3>
+            <hr class="hr">
+            <a href="#About" class="btn btn-dark btn-lg">Who Am I?</a>
+    </div>
+</header>
+
+<section id="About">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1><i class="fa fa-star-half" aria-hidden="true"></i> About Me <i class="fa fa-star-half                                  fa-flip-horizontal" aria-hidden="true"></i></h1>
+                <hr class="hr">
+                <p>Here's some cool facts about me</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="Portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1><i class="fa fa-magic" aria-hidden="true"></i> My
+                    Portfolio
+                    <i class="fa fa-magic fa-flip-horizontal"
+                       aria-hidden="true">
+                    </i>
+                </h1>
+
+                <hr class="hr">
+
+                <a href="#Portfolio" id="Project1"><div
+                        class="col-lg-6 thumbnail project1">
+                    <img src="img/bg_web.jpg">
+                </div></a>
+
+                <a href="#Portfolio" id="Project2"><div
+                        class="col-lg-6 thumbnail project2">
+                    <img src="img/bg_web3.jpg">
+                </div></a>
+                <br>
+                <h1 class="moleProject">Whack-a-Mole</h1>
+
+                <div id="board" class="moleProject col-lg-12">
+                    <div id="mole">
+                        <div id="eyeline">
+                            <div class="eye"></div>
+                            <div class="eye"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="learnitnow">
+                    <br>
+                    <h1>WELCOME TO LEARN IT NOW!</h1>
+
+                    <h2></h2>
+                    <br>
+                    <div id="firepad"></div>
+
+                    <form>
+                        Create your room name:
+                        <br>
+                        <input id="roomname" class="inputroomname" type="text" name="roomname">
+                        <br><br>
+                        <a class="btn btn-primary btn-lg" id="submit" href="#Portfolio">Go to Room</a>
+                        <br><br>
+                    </form>
+
+                    <p>To get started, please type in a room name.</p>
+                    <p>When you click on "go to room" you will be put into the chat
+                        room you typed in. Currently, there are no usernames
+                        for the chatrooms.</p>
+                    <p>To switch rooms, you need to reload the page. I'm working on an asynchronous solution to this                            issue!</p>
+                    <p>Happy chatting!</p>
+                </div>
+
+                <br>
+
+                <p id="score"></p>
+
+                <br>
+                <div class="project1 button">
+                    <button type="button" onclick="dig();">
+                        Click to Start </button>
+                </div>
+
+                <br>
+                <div class="escape button">
+                    <button type="button" onclick="myProject1Escape();">
+                        Click here when finished with this project </button>
+                </div>
+
+                <br>
+                <div class="escape2 button">
+                    <button type="button" onclick="myProject2Escape();">
+                        Click here when finished with this project </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="Resume">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1><i class="fa fa-briefcase" aria-hidden="true"></i> Check out my Resume <i class="fa fa-briefcase" aria-hidden="true"></i></h1>
+                <hr class="hr">
+                <br>
+                <div>
+                    <iframe height='100vh' width='100vw' src="docs/Resume- Eric Andrade.pdf">Resume - Eric
+                        Andrade</iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="Contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1><i class="fa fa-whatsapp" aria-hidden="true"></i> Contact
+                    Me <i class="fa fa-whatsapp" aria-hidden="true"></i></h1>
+            </div>
+            <div class="col-lg-10 col-lg-offset-1 text-center">
+                <h4>Eric Andrade</h4>
+                <h4>Santa Monica, CA</h4>
+                <ul class="list-unstyled">
+                    <li>
+                        <i class="fa fa-mobile fa-fw"></i>
+                        <a href="tel:+19098379409">(909)837-9409</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-envelope-o fa-fw"></i>
+                        <a href="mailto:eandrade21@gmail.com">eandrade21
+                            @gmail.com</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer id="Footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col col-lg-12 text-center">
+                <h3>Find Me Around the Web</h3>
+                <ul class="list-inline">
+                    <li>
+                        <a href="#Footer" onclick="window.open('https://github.com/severus-snake')"
+                           class="btn-social btn-outline"><span class="sr-only">Github</span>
+                            <i class="fa fa-fw fa-github"></i></a>
+                    </li>
+                    <li>
+                        <a href="#Footer" onclick="window.open('http://codepen.io/severus-snake/')"
+                           class="btn-social btn-outline"><span class="sr-only">Codepen</span>
+                            <i class="fa fa-fw fa-codepen"></i></a>
+                    </li>
+                    <li>
+                        <a href="#Footer" onclick="window.open('https://www.linkedin.com/in/eric-andrade-38125129/')"
+                           class="btn-social btn-outline"><span class="sr-only">LinkedIn</span>
+                            <i class="fa fa-fw fa-linkedin"></i></a>
+                    </li>
+                </ul>
+            </div>
+
+            <br>
+
+            <div class="copyright col-lg-12 text-center">
+                <p class="text-muted">Copyright &copy; Eric Andrade
+                    2017</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous">
+</script>
+
+<!-- Bootstrap JS -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous">
+</script>
+
+<!-- Firebase JS -->
+<script src="https://www.gstatic.com/firebasejs/4.0.0/firebase.js"></script>
+
+<!-- Ace JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.5/ace.js"></script>
+
+<!-- Firepad JS -->
+<script src="https://cdn.firebase.com/libs/firepad/1.4.0/firepad.min.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>

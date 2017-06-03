@@ -1,0 +1,285 @@
+/* Global Styles */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+
+
+
+
+/* Navbar styling */
+
+.navbar-brand {
+    font-size: 2em;
+}
+
+.navbar-right {
+    font-size: 1.5em;
+}
+
+
+
+
+
+/* Header Style */
+
+.header {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url("img/bg_web2.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    margin-bottom: 5vh;
+}
+
+.text-vertical-center {
+    font-family: "Georgia", sans-serif;
+    color: white;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.text-vertical-center h1 {
+     margin: 0;
+     padding: 0;
+     font-size: 4.5em;
+}
+
+.hr {
+    border-top: 2px solid black;
+    width: 20%;
+}
+
+
+
+
+
+
+/* Custom Button Styles */
+
+.btn-social {
+    font-size: 2.5em;
+}
+
+.list-unstyled {
+    font-size: 18px;
+}
+
+.btn-dark {
+    border-radius: 0;
+    color: #fff;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.btn-dark:hover,
+.btn-dark:focus,
+.btn-dark:active {
+    color: #fff;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.btn-light {
+    border-radius: 0;
+    color: #333;
+    background-color: rgb(255,255,255);
+}
+
+.btn-light:hover,
+.btn-light:focus,
+.btn-light:active {
+    color: #333;
+    background-color: rgba(255,255,255,0.8);
+}
+
+
+
+
+
+
+/* Custom sizing for the different sections */
+
+#About {
+    height: 100vh;
+    padding: 50px 0;
+    margin-bottom: 5vh;
+}
+
+#Resume {
+    height: 100vh;
+    padding: 50px 0;
+}
+
+#Resume iframe{
+    height: 80vh;
+    width: 100%;
+}
+
+#Portfolio {
+    height: 100vh;
+    padding: 50px 0;
+}
+
+#Portfolio div.thumbnail {
+    margin-top: 5vh;
+}
+
+#Contact {
+    height: 75vh;
+    padding: 50px 0;
+}
+
+
+
+
+
+
+/* Project 1 Whack-a-Mole CSS */
+
+.moleProject {
+    display: none;
+    margin-bottom: 5vh;
+}
+
+.moleProject h1 {
+    text-align: center;
+    font-family: 'Georgia', sans-serif;
+}
+
+.eye {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    margin: 2px;
+    background-color: orange;
+    border-radius: 50%;
+}
+
+#mole {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px 30px 0px 0px;
+    background-color: rebeccapurple;
+}
+
+#eyeline {
+    position: absolute;
+    left: 8px;
+    top: 10px;
+}
+
+#board {
+    position: relative;
+    border: 5px solid black;
+    background-color: navy;
+    height: 50vh;
+}
+
+#score {
+    font-family: 'Georgia', sans-serif;
+    font-size: 1.5em;
+    display: none;
+}
+
+.project1.button {
+    display: none;
+}
+
+.escape.button {
+    display: none;
+}
+
+
+
+
+
+
+
+/* Project 2 Firebase Collaboration Chat Room CSS */
+
+.learnitnow {
+    display: none;
+}
+
+.escape2.button{
+    display: none;
+}
+
+#firepad {
+    display: none;
+    position: relative;
+    margin: 0 auto;
+    width: 60vw;
+    height: 50vh;
+    background-color: #f62;
+    font-size: 1em;
+}
+
+.learnitnow .ace-tm .ace_print-margin {
+    width: 0;
+}
+
+.learnitnow h1 {
+
+    color: black;
+    text-align: center;
+    font-size: 50px;
+}
+
+.learnitnow h2 {
+
+    color: black;
+    text-align: center;
+    font-size: 40px;
+}
+
+.learnitnow p {
+    text-align: center;
+    font-size: 1.5em;
+    color: black;
+}
+
+.learnitnow form {
+    text-align: center;
+    font-family: "Droid Sans", sans-serif;
+    font-size: 3em;
+}
+
+.learnitnow span {
+    color: red;
+}
+
+.learnitnow input {
+    font-family: "Droid Sans", sans-serif;
+    color: white;
+    font-size: 1em;
+    background-color: black;
+}
+
+
+
+
+
+
+/* Footer Styles */
+
+.footer-col h3{
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 3em;
+}
+
+.copyright {
+    font-size: 1.5em;
+}
